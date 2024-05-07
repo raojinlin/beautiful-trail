@@ -1,0 +1,4 @@
+<!--pages/customer/customer.wxml-->
+<view class="weui-search-bar {{searchState ? 'weui-search-bar_focusing' : ''}} {{extClass}}">   
+  <t-list customers="{{customers}}" />
+</view>

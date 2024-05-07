@@ -1,0 +1,9 @@
+<t-message id="t-message" />
+<scroll-view>
+  <form class="add_customer_form">
+    <t-input placeholder="请输入顾客名称" label="顾客名称" model:value="{{name}}" />
+    <t-input placeholder="请输入顾客的电话号码" label="电话号码" model:value="{{phone}}" />
+    <t-input placeholder="请输入顾客的微信" label="微信" model:value="{{weixin}}" />
+    <t-button block theme="primary" bind:tap="handleAdd">添加顾客</t-button>
+  </form>
+</scroll-view>

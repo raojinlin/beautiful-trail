@@ -1,0 +1,14 @@
+/**app.wxss**/
+page {
+  --td-brand-color: #f2a8bc; // 任何你想要的主题色
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 

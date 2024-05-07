@@ -1,0 +1,93 @@
+/* components/list/list.wxss */
+
+page {
+  // --td-brand-color: #f2a8bc; // 任何你想要的主题色
+  // --td-brand-color-active: #fcb2c6;
+  // --td-text-color-primary: #f2a8bc;
+}
+
+.list-header {
+  display: flex;
+
+  & .searchbar {
+    flex: 1;
+  }
+
+  & .view-add {
+    width: 100px;
+  }
+}
+
+.view-add {
+  margin: 10px;
+  text-align: right;
+}
+
+.btn-wrapper {
+  height: 100%;
+}
+
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 120rpx;
+  height: 100%;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #e34d59;
+}
+
+.edit-btn {
+  background-color: #ed7b2f;
+}
+
+.favor-btn {
+  background-color: #0052d9;
+}
+
+.block {
+  width: 100vw;
+  height: 240px;
+  background: #fff;
+  border-top-left-radius: 16rpx;
+  border-top-right-radius: 16rpx;
+}
+
+.wrapper {
+  margin: 32rpx;
+  display: block;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 116rpx;
+}
+
+.title {
+  flex: 1;
+  text-align: center;
+  font-weight: 600;
+  font-size: 36rpx;
+}
+
+.btn {
+  font-size: 32rpx;
+  // padding: 32rpx;
+}
+
+.btn--cancel {
+  color: rgba(0, 0, 0, .6);
+}
+
+.btn--confirm {
+  color: #0052d9;
+}
+
+.body {
+  padding: 10rpx 25rpx;
+}

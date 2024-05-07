@@ -1,0 +1,32 @@
+<view class="customer-list">
+  <view class="list-header">
+    <t-search class="searchbar" model:value="{{searchValue}}" placeholder="搜索顾客" />
+    <view class="view-add">
+      <t-button bind:tap="handleAdd" style="color:#fff" theme="primary" size="small">添加顾客</t-button>
+    </view>
+  </view>
+  <scroll-view>
+    <t-swipe-cell wx:for="{{filteredCustomers}}" wx:key="item" hover arrow title="{{item.name}}">
+      <t-cell title="{{item.name}}" data-customer-name="{{item.name}}" bind:tap="handleDetailCustomer" />
+      <view slot="right" class="btn-wrapper">
+        <view class="btn edit-btn" bind:tap="onEdit">编辑</view>
+        <view class="btn delete-btn" bind:tap="onDelete">删除</view>
+      </view>
+    </t-swipe-cell>
+  </scroll-view>
+
+  <t-popup visible="{{visible}}" bind:visible-change="onVisibleChange" placement="bottom">
+    <view class="block">
+      <view class="header">
+        <view class="btn btn--cancel" aria-role="button" bind:tap="onClose">取消</view>
+        <view class="title">顾客信息</view>
+        <view class="btn btn--confirm" aria-role="button" bind:tap="onClose">确定</view>
+      </view>
+      <view class="body">
+        <view><text>名称：{{detailsCustomer.name}}</text></view>
+        <view><text>电话：{{detailsCustomer.phone}}</text></view>
+        <view><text>微信：{{detailsCustomer.weixin}}</text></view>
+      </view>
+    </view>
+  </t-popup>
+</view>

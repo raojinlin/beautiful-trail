@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "navigation-bar": "/components/navigation-bar/navigation-bar",
+    "t-input": "/miniprogram_npm/tdesign-miniprogram/input/input",
+    "t-button": "/miniprogram_npm/tdesign-miniprogram/button/button",
+    "add-customer": "/components/add-customer/add-customer"
+  },
+  "navigationBarTitleText": "添加顾客"
+}
